@@ -320,6 +320,58 @@ section:nth-of-type(odd) {
 	text-transform: uppercase;
 }
 
+/* features */
+.f-r {
+	text-align: right;
+	margin: 15px;
+}
+
+.f-l {
+	text-align: left;
+	margin: 15px;
+}
+
+.features {
+	padding: 10px;
+}
+
+.features p {
+	font-size: 16px;
+	color: #a0a0a0;
+	line-height: 26px;
+}
+
+.features h3 {
+	color: #F2623C;
+}
+
+/* Mint Section */
+#mint {
+	background-color:#F2623C;
+	background-color: url(../img/mint.jpg) no-repeat center top;
+	padding-top: 50px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 400px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mint h4 {
+	font-weight: 300;
+	color: white;
+}
+
 /* Configuration Blog Part */
 .w h5 {
 	text-transform: uppercase;

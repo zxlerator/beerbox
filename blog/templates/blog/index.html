@@ -1,233 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  	{% load staticfiles %}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="{% static 'blog/assets/img/favicon.ico">
-
-    <title>Beerbox | Beer vending machines</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'blog/assets/css/bootstrap.css' %}" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="{% static 'blog/assets/css/ionicons.min.css' %}" rel="stylesheet">
-    <link href="{% static 'blog/assets/css/style.css' %}" rel="stylesheet">
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{% static 'blog/assets/js/ie10-viewport-bug-workaround.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Landing Sumo</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-	<!-- ********** HEADER ********** -->
-	<section id="home"></section>
-	<div id="h">
-	    <div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h1>Stay in the moment, not the line</h1>
-					<button class="btn btn-conf btn-green">What's Beerbox?</button>
-					<!--<button class="btn btn-conf btn-clear">What's Beerbox?</button>-->
-				</div>
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block meta %}
+<title>Beerbox | Beer vending machines</title>
+<meta name="description" content="">
+{% endblock %}
+{% block content %}
+<!-- ********** HEADER ********** -->
+<section id="home"></section>
+<div id="h">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Stay in the moment, not the line</h1>
+				<button class="btn btn-conf btn-green">What's Beerbox?</button>
+				<!--<button class="btn btn-conf btn-clear">What's Beerbox?</button>-->
 			</div>
-	    </div><!-- /.container -->
-	</div><!--/H -->
-
-	<!-- ********** WHITE SECTION - IMAGE PHONE ********** -->
-	<div class="container">
-		<div class="row mtb">
-			<div class="col-md-5">
-				<h1 class="mb mt">Hate lines and love beer? Us too.</h1>
-				<p>That’s why we created BeerBox, which is a super cool vending machine that dispenses cold beer cans at music festivals, concerts, and sporting events. It’s easy to use and fast! Cheers to no more lines.</p>
-				<br>
-				<!--<h4><b>Benefits</b></h4>
-				<div class="row">
-					<div class="col-sm-10 col-sm-offset-1">
-						<ul>
-							<li><p>It works like magic and elevates the beer can out of the machine. It even opens the can for you, too!</p>
-							</li>
-							<li><p>Just swipe your credit card or tap your phone with Apple Pay to get your beer. The days of having your crumpled dollar rejected are over.</p>
-							</li>
-							<li><p>It’s the first time you’ll ever want to take a selfie with a vending machine. We guarantee a 543% increase in your Instagram likes.</p>
-							</li>
-						</ul>	
-					</div>
-				</div>-->
-				<p class="mt"><button class="btn btn-conf btn-green">Buy Theme</button></p>
-			</div>
-			
-			<div class="col-md-7">
-				<img class="img-responsive aligncenter" src="{% static 'blog/assets/img/beerbox.png' %}" style="width:100%">
-			</div>
-		</div><!--/row -->
-	</div><!--/container-->
-
-	<!-- ********** GREEN - SECTION ********** -->
-	<div id="g">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<i class="fa fa-magic"></i>
-					<h4>Fast</h4>
-					<p>It works like magic and elevates the beer can out of the machine. It even opens the can for you, too!</p>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-credit-card"></i>
-					<h4>Easy</h4>
-					<p>Just swipe your credit card or tap your phone with Apple Pay to get your beer. The days of having your crumpled dollar rejected are over.</p>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-heart"></i>
-					<h4>Amazing</h4>
-					<p>It’s the first time you’ll ever want to take a selfie with a vending machine. We guarantee a 543% increase in your Instagram likes.</p>
-				</div>
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/G -->
-	
-	<!-- ********** SIDE IMAGE - SECTION ********** -->
-	<section id="about"></section>
-	<section class="side-image text-heavy clearfix">
-		<div class="image-container col-md-5 col-sm-3 pull-left">
-			<div class="background-image-holder">
-				<img class="background-image" alt="Background Image" src="{% static 'blog/assets/img/side.jpg' %}">
-			</div><!--/background-img-holder-->
-		</div><!--/img-container-->
-				
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 content clearfix">
-					<h1>Hate lines and love beer? Us too.</h1>
-					<p class="lead">That’s why we created BeerBox, which is a super cool vending machine that dispenses cold beer cans at music festivals, concerts, and sporting events. It’s easy to use and fast! Cheers to no more lines.  </p>
-					<a href="" class="btn btn-conf btn-green">Purchase Theme</a><br>
-					<div class="col-sm-4 no-pad-left feature">
-						<h5>Awesome Designs</h5>
-						<p>It works like magic and elevates the beer can out of the machine. It even opens the can for you, too!</p>
-					</div>
-					<div class="col-sm-4 no-pad-left feature">
-						<h5>Bootstrap 3</h5>
-						<p>Just swipe your credit card or tap your phone with Apple Pay to get your beer. The days of having your crumpled dollar rejected are over.</p>
-					</div>
-					<div class="col-sm-4 no-pad-left feature">
-						<h5>Bootstrap 3</h5>
-						<p>It’s the first time you’ll ever want to take a selfie with a vending machine. We guarantee a 543% increase in your Instagram likes. </p>
-					</div>
-				</div><!--col-md-6 col-sm-8 -->
-			</div><!-- /row -->
-		</div><!--/container -->
-	</section><!--Side Image Section -->
-
-	<!-- ********** GREY SECTION - BLOG ********** -->	
-	<div id="grey">
-		<div class="container">
-			<div class="row w">
-				<div class="col-md-4">
-					<img src="{% static 'blog/assets/img/blog01.jpg' %}" class="img-responsive aligncenter" alt="">
-					<div class="date">
-						<h4><bold>13</bold></h4>
-						<h4>Sep</h4>
-					</div>
-					<h5>The Food You Need</h5>
-					<p class="desc">Posted by Frank Smith in <b>Tips</b></p>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<p><a href="#">Continue Reading...</a></p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4">
-					<img src="{% static 'blog/assets/img/blog02.jpg' %}" class="img-responsive aligncenter" alt="">
-					<div class="date">
-						<h4><bold>28</bold></h4>
-						<h4>Aug</h4>
-					</div>
-					<h5>Thinking About Life</h5>
-					<p class="desc">Posted by Frank Smith in <b>Thougts</b></p>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<p><a href="#">Continue Reading...</a></p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4">
-					<img src="{% static 'blog/assets/img/blog03.jpg' %}" class="img-responsive aligncenter" alt="">
-					<div class="date">
-						<h4><bold>13</bold></h4>
-						<h4>Jul</h4>
-					</div>
-					<h5>Visiting The Mountains</h5>
-					<p class="desc">Posted by Frank Smith in <b>Travel</b></p>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<p><a href="#">Continue Reading...</a></p>
-				</div><!--/col-md-4-->
-			</div><!--/row -->
 		</div>
-	</div><!--/GREY -->
-	
-	<!-- ********** WHITE SECTION - CTA ********** -->
-	<section id="contact"></section>
+    </div><!-- /.container -->
+</div><!--/H -->
+
+<!-- ********** WHITE SECTION - IMAGE PHONE ********** -->
+<div class="container">
+	<div class="row mtb">
+		<div class="col-md-5">
+			<h1 class="mb mt">Hate lines and love beer? Us too.</h1>
+			<p>That’s why we created BeerBox, which is a super cool vending machine that dispenses cold beer cans at music festivals, concerts, and sporting events. It’s easy to use and fast! Cheers to no more lines.</p>
+			<br>
+			<!--<h4><b>Benefits</b></h4>
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<ul>
+						<li><p>It works like magic and elevates the beer can out of the machine. It even opens the can for you, too!</p>
+						</li>
+						<li><p>Just swipe your credit card or tap your phone with Apple Pay to get your beer. The days of having your crumpled dollar rejected are over.</p>
+						</li>
+						<li><p>It’s the first time you’ll ever want to take a selfie with a vending machine. We guarantee a 543% increase in your Instagram likes.</p>
+						</li>
+					</ul>	
+				</div>
+			</div>-->
+			<!--<p class="mt"><button class="btn btn-conf btn-green">Buy Theme</button></p>-->
+		</div>
+		
+		<div class="col-md-7">
+			<img class="img-responsive aligncenter" src="{% static 'blog/assets/img/beerbox.jpg' %}" width="320">
+		</div>
+	</div><!--/row -->
+</div><!--/container-->
+
+<!-- ********** GREEN - SECTION ********** -->
+<div id="g">
 	<div class="container">
-		<div class="row mtb2">
-			<div class="col-md-8 col-md-offset-2 centered">
-				<h6>WE ARE AN AWESOME TEAM</h6>
-				<h2 class="bold mb">We are looking for talented people<br/>to work with us.</h2>
-				<button class="btn btn-conf btn-green">Join our incredible team</button>
+		<div class="row">
+			<div class="col-md-4">
+				<i class="fa fa-magic"></i>
+				<h4>Fast</h4>
+				<p>It works like magic and elevates the beer can out of the machine. It even opens the can for you, too!</p>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-credit-card"></i>
+				<h4>Easy</h4>
+				<p>Just swipe your credit card or tap your phone with Apple Pay to get your beer. The days of having your crumpled dollar rejected are over.</p>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-heart"></i>
+				<h4>Amazing</h4>
+				<p>It’s the first time you’ll ever want to take a selfie with a vending machine. We guarantee a 543% increase in your Instagram likes.</p>
 			</div>
 		</div><!--/row -->
 	</div><!--/container -->
-	
-	<!-- ********** FOOTER ********** -->
-	<div id="f">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 centered">
-					<h5>HELLO@GOBEERBOX.COM</h5>
-					<p class="mt">
-						<a href="#"><i class="ion-social-twitter"></i></a>
-						<a href="#"><i class="ion-social-instagram"></i></a>
-						<a href="#"><i class="ion-social-dribbble"></i></a>
-					</p>
-				</div>
+</div><!--/G -->
+
+<!-- ********** PHONE & FEATURES ********** -->
+<div class="container">
+	<div class="row mtb2">
+		<h1 class="centered">Beerbox Features</h1>
+		<hr class="aligncenter mb">
+		
+		<div class="col-md-4">
+			<div class="features f-r">
+				<h3>Capacity</h3>
+				<p>300 25oz cans (150 cans/system)</p>
 			</div>
+			<div class="features f-r">
+				<h3>Payment</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+			<div class="features f-r">
+				<h3>Cooling</h3>
+				<p>Cools cans to 35F (Cans need to be pre-chilled)</p>
+			</div>
+		</div><!--/col-md-4-->
+		<div class="col-md-4 hidden-xs">
+			<img class="img-responsive aligncenter" src="{% static 'blog/assets/img/phone.png' %}">
+		</div><!--col-md-4-->
+		<div class="col-md-4">
+			<div class="features f-l">
+				<h3>Time</h3>
+				<p>&lt;45 seconds from payment to beer in hand</p>
+			</div>
+			<div class="features f-l">
+				<h3>Brand Activation</h3>
+				<p>4 side panels, 2 masts, LED lighting (mast & table)</p>
+			</div>
+			<div class="features f-l">
+				<h3>Tech</h3>
+				<p>Network: LTE & Ethernet<br>Can Opening & Can Orientatio</p>
+			</div>
+		</div><!--/col-md-4-->
+		
+	</div><!--/row -->
+</div><!--/container -->
+
+<div id="mint" class="carousel slide" data-ride="carousel">
+	<div class="col-md-6 col-md-offset-3">
+	    <!-- Carousel
+	    ================================================== -->
+	      <!-- Indicators -->
+	      <ol class="carousel-indicators">
+	        <li data-target="#mint" data-slide-to="0" class="active"></li>
+	        <li data-target="#mint" data-slide-to="1"></li>
+	        <li data-target="#mint" data-slide-to="2"></li>
+	      </ol>
+	      <div class="carousel-inner">
+	        <div class="item active">
+	        	<div class="centered mtb">
+	            	<img src="{% static 'blog/assets/img/pic01.jpg' %}" class="img-circle" height="100" width="100" alt="First slide">
+			        <h4>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</h4>
+			        <p>SHARON SMITH</p>
+				</div>
+			</div><!-- /item -->
+			
+	        <div class="item">
+	        	<div class="centered mtb">
+	            	<img src="{% static 'blog/assets/img/pic02.jpg' %}" class="img-circle" height="100" width="100" alt="First slide">
+			        <h4>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</h4>
+			        <p>SAM MANNING</p>
+				</div>
+			</div><!-- /item -->
+
+	        <div class="item">
+	        	<div class="centered mtb">
+	            	<img src="{% static 'blog/assets/img/pic03.jpg' %}" class="img-circle" height="100" width="100" alt="First slide">
+			        <h4>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</h4>
+			        <p>PAUL STEVENSON</p>
+				</div>
+			</div><!-- /item -->
+    	
+		</div><!--/carousel-inner -->
+	</div><!--/col-md-6 -->
+</div><!--/mint -->
+
+<!-- ********** WHITE SECTION - CTA ********** -->
+<section id="contact"></section>
+<div class="container">
+	<div class="row mtb2">
+		<div class="col-md-8 col-md-offset-2 centered">
+			<h6>BEERBOX IS AWESOME</h6>
+			<h2 class="bold mb">Where is Beerbox?</h2>
 		</div>
-	</div><!--/F -->
-	
-	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{% static 'blog/assets/js/jquery.min.js"></script>
-    <script src="{% static 'blog/assets/js/bootstrap.min.js"></script>
-    <script src="{% static 'blog/assets/js/retina-1.1.0.js"></script>
-  </body>
-</html>
+	</div><!--/row -->
+</div><!--/container -->
+
+<!-- ********** GREY SECTION - BLOG ********** -->	
+<div id="grey">
+	<div class="container">
+		<div class="row w">
+			<div class="col-md-4">
+				<img src="{% static 'blog/assets/img/blog01.jpg' %}" class="img-responsive aligncenter" alt="">
+				<div class="date">
+					<h4><bold>13</bold></h4>
+					<h4>Sep</h4>
+				</div>
+				<h5>The Food You Need</h5>
+				<p class="desc">Posted by Frank Smith in <b>Tips</b></p>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				<p><a href="#">Continue Reading...</a></p>
+			</div><!--/col-md-4-->
+			<div class="col-md-4">
+				<img src="{% static 'blog/assets/img/blog02.jpg' %}" class="img-responsive aligncenter" alt="">
+				<div class="date">
+					<h4><bold>28</bold></h4>
+					<h4>Aug</h4>
+				</div>
+				<h5>Thinking About Life</h5>
+				<p class="desc">Posted by Frank Smith in <b>Thougts</b></p>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				<p><a href="#">Continue Reading...</a></p>
+			</div><!--/col-md-4-->
+			<div class="col-md-4">
+				<img src="{% static 'blog/assets/img/blog03.jpg' %}" class="img-responsive aligncenter" alt="">
+				<div class="date">
+					<h4><bold>13</bold></h4>
+					<h4>Jul</h4>
+				</div>
+				<h5>Visiting The Mountains</h5>
+				<p class="desc">Posted by Frank Smith in <b>Travel</b></p>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				<p><a href="#">Continue Reading...</a></p>
+			</div><!--/col-md-4-->
+		</div><!--/row -->
+	</div>
+</div><!--/GREY -->
+
+<!-- ********** WHITE SECTION - CTA ********** -->
+<section id="contact"></section>
+<div class="container">
+	<div class="row mtb2">
+		<div class="col-md-8 col-md-offset-2 centered">
+			<h6>BEERBOX IS AWESOME</h6>
+			<h2 class="bold mb">Want to get updates about Beerbox? <br>Stay in touch</h2>
+			<button class="btn btn-conf btn-green">Join our incredible team</button>
+		</div>
+	</div><!--/row -->
+</div><!--/container -->
+{% endblock %}
