@@ -98,7 +98,7 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #1abc9c;
+	color: #F2623C;
 }
 a:hover,
 a:focus {
@@ -188,7 +188,7 @@ input {
 	}
 
 .btn-green {
-	background: #03C9A9;
+	background: #F2623C;
 	color: white
 }
 
@@ -199,13 +199,13 @@ input {
 }
 .btn-clear:hover {
 	background: white;
-	color: #2f2f2f;
+	color: #231F20;
 }
 
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: url(../img/beerbox-49ers.jpg) no-repeat center top;
 	padding-top: 250px;
 	background-attachment: relative;
 	background-position: center center;
@@ -236,7 +236,7 @@ input {
 #g {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background: #03C9A9;
+	background: #F2623C;
 	color: white;
 }
 
@@ -328,7 +328,7 @@ section:nth-of-type(odd) {
 }
 
 .w hr{
-	border: 1px solid #2f2f2f;
+	border: 1px solid #231F20;
 	width: 40px;
 }
 
@@ -339,7 +339,7 @@ section:nth-of-type(odd) {
 
 .w .date {
 	float: left;
-	border: 2px solid #2f2f2f;
+	border: 2px solid #231F20;
 	margin-right: 15px;
 	padding: 5px;
 	margin-top: 10px;
@@ -375,7 +375,7 @@ h2.bold {
 #f {
 	padding-bottom: 80px;
 	padding-top: 80px;
-	background: #2f2f2f;
+	background: #231F20;
 	color: white;
 }
 
