@@ -61,14 +61,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'blog:index' %}">Beerbox</a>
+          <a class="navbar-brand" href="{% url 'blog:index' %}"><img src="{% static 'blog/assets/img/logo.png' %}" style="width:80px; margin-top:-20px"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="{% url 'blog:index' %}">Home</a></li>
+            <li><a href="{% url 'blog:about' %}">About</a></li>
             <li><a href="{% url 'blog:faq' %}">FAQs</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{% url 'blog:contact' %}">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

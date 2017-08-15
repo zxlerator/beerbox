@@ -10,6 +10,9 @@ class IndexView(generic.TemplateView):
 class AboutView(generic.TemplateView):
     template_name = "blog/about.html"
 
+class ContactView(generic.TemplateView):
+    template_name = "blog/contact.html"
+
 class FaqView(generic.TemplateView):
     template_name = "blog/faq.html"
 
