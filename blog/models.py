@@ -1,6 +1,10 @@
-# -*- coding: utf-8 -*-
+
 from __future__ import unicode_literals
 
 from django.db import models
 
-# Create your models here.
+class Event(models.Model):
+    name = models.CharField(max_length=200)
+    description = models.TextField()
+    date = models.DateField(auto_now_add=True)
+    image = models.FileField(upload_to='images/%Y%m%d')
