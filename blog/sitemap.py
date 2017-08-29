@@ -1,5 +1,4 @@
 from django.contrib.sitemaps import Sitemap
-from .models import Post
 from django.core.urlresolvers import reverse
 
 class ViewSitemap(Sitemap):
