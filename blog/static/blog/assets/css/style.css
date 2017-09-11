@@ -365,10 +365,10 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/beerbox-49ers.jpg) no-repeat center top;
+	background: url(../img/home_page.jpg) no-repeat center top;
 	padding-top: 250px;
 	background-attachment: relative;
-	background-position: center center;
+	background-position: right top;
 	min-height: 700px;
 	width: 100%;
 	
