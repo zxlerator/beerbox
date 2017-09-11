@@ -504,6 +504,7 @@ section:nth-of-type(odd) {
 }
 
 .features p {
+	font-family: "GothamBook";
 	font-size: 16px;
 	color: #a0a0a0;
 	line-height: 26px;
