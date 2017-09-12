@@ -207,6 +207,10 @@ body {
 	height: 100%;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 .alignleft { float: left; }
 .alignright { float: right; }
 .aligncenter {
@@ -362,6 +366,10 @@ input {
 	color: #231F20;
 }
 
+.video{
+	width: 560px;
+	height: 315px;
+}
 
 /* HEADER SECTION */
 #h {
@@ -383,9 +391,13 @@ input {
     background-size: cover;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     #h {
-        background-position: left top;
+        background-position: center top;
+    }
+
+    .video{
+    	width: 300px;
     }
 }
 
@@ -402,8 +414,8 @@ input {
 
 /* Green Section */
 #g {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background: #F2623C;
 	color: white;
 }
