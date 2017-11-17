@@ -373,7 +373,7 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/home_page.jpg) no-repeat center top;
+	background: url(../img/beerbox6.jpg) no-repeat center top;
 	padding-top: 250px;
 	background-attachment: relative;
 	background-position: right top;
@@ -397,7 +397,7 @@ input {
     }
 
     .video{
-    	width: 300px;
+    	width: 370px;
     }
 
     .imagess{
