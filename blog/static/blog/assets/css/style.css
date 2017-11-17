@@ -393,7 +393,7 @@ input {
 
 @media screen and (max-width: 480px) {
     #h {
-        background-position: center top;
+        background-position: left top;
     }
 
     .video{
